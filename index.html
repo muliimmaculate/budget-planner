@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+</head>
+<body>
+    <style>
+        body{
+            color: #fff;
+            transition: background-color 1s ease;
+            animation-name: colorflow;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes colorflow{
+            0%{
+                background-color: #0061a1;
+            }
+            25%{
+                background-color: #00d4a6;
+            }
+            50%{
+                background-color: #c200c2;
+            }
+            75%{
+                background-color: #c90a43;
+            }
+            100%{
+                background-color: #f83a00;
+            }
+        }
+        header{
+            color: #f5f5f5;
+            justify-content: space-between;
+            width: 100%;
+            display: flex;
+        }
+        button{
+            background-color: #e68609;
+            border: none;
+            color: #fff;
+            margin-left: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            width: 80px;
+            height: 40px;
+           
+        }
+        .auth-buttons{
+            display: flex;
+            
+        }
+        button:hover{
+            background-color: #fff;
+            color: #000;
+            transition: background-color 0.3s ease;
+        }
+        #content{
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 2em;
+        }
+        h2{
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+    </style>
+    <header>
+            <h1>Budget Planner</h1>
+            <div class="auth-buttons">
+              <button id="signin-btn"><a href="signin.html">Sign In</a></button>
+              <button id="signup-btn"><a href="signup.html">Sign Up</a></button>
+        </div>
+    </header>
+   
+            <div id="content">
+                <h2>Take Control Of Your Finances</h2>
+                <p>Our budget planner makes it easy to manage your money and stay on top of your expenses.
+                    Sign up or Sign in to get started
+                </p>
+            </div>
+            <script src="app.js"></script>
+</body>
+</html>

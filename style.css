@@ -1,0 +1,155 @@
+body{
+    animation-name: colorflow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#container{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin-top: 0;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    padding: 20px;
+    /* background-color: #6106ac; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /* background-color: #eee; */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="number"]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    font-size: 16px;
+    /* color: #333; */
+}
+/* input[type="text"]:focus,
+input[type="number"]:focus{
+    outline: none;
+} */
+button[type="submit"]{
+    background-color:#c46104;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    /* margin-top: 10px; */
+    transition: all 0.3s ease;
+    width: 80px;
+}
+button[type="submit"]:hover{
+    background-color: #703803;
+}
+#total-expenses{
+    background-color: #c46104;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+#total-expenses-value{
+    font-size: 32px;
+}
+#edit-budget-expense{
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#edit-budget-expense-text{
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: block;
+}
+#expenses-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+#expenses-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#expenses-list li button{
+    background-color: #c46104;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#expenses-list li button:hover{
+    background-color: rgb(153, 66, 16);
+}
+#expenses-total,
+#expenses-remaining{
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+#expenses-total{
+    margin-right: 20px;
+}
+#view-budget{
+    background-color: #c46104;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#view-budget h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#bar-chart{
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #333;
+    padding: 10px;
+}
+#add-expense-form{
+    background-color: #eee;
+}
+@keyframes colorflow{
+    0%{
+        background-color: #0061a1;
+    }
+    25%{
+        background-color: #00d4a6;
+    }
+    50%{
+        background-color: #c200c2;
+    }
+    75%{
+        background-color: #c90a43;
+    }
+    100%{
+        background-color: #f83a00;
+    }
+}

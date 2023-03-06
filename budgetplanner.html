@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget planner</title>
+</head>
+<body>
+<div id="container">
+  <h1>Budget Planner</h1>
+  <form id="budget-form">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+    </div>
+    <div>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" step="0.01" required />
+    </div>
+    <button type ="submit" id="add-btn">Add</button>
+  </form>
+  <div id="budget-summary">
+  <div id="total-expenses">
+    Total Expenses: <span id="total-expenses-value">0.00</span>
+  </div>
+  <div id="edit-budget-expense">
+    <span id="edit-budget-expense-text">Edit budget expense:</span>
+    <ul id="expenses-list">
+    <!--existing expenses will be added dynamically here-->
+  </ul>
+  </div>
+  Total: <span id="expenses-total">0.00</span>
+  Remaining: <span id="expenses-remaining">0.00</span>
+</div>
+</div>
+<div id="view-budget">
+  <h2>Budget</h2>
+  <div id="bar-chart">
+    <!--bar chart visualization will be added dynamically here-->
+  </div>
+</div>
+<div id="add-expense-form">
+  <h2>Add Expense</h2>
+  <form id="expense-form">
+    <div>
+      <label for="expense-name">Name:</label>
+      <input type="text" id="expense-name" required>
+      </div>
+      <div>
+        <label for="expense-amount">Amount:</label>
+      <input type="text" id="expense-amount" required>
+      </div>
+      <button type="submit">Add</button>
+  </form>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyB8WYMubOzLAqaiRQAu3xX0B1VcP60JGPQ",
+          authDomain: "react-budget-planner-360c3.firebaseapp.com",
+          databaseURL: "https://react-budget-planner-360c3-default-rtdb.firebaseio.com",
+          projectId: "react-budget-planner-360c3",
+          storageBucket: "react-budget-planner-360c3.appspot.com",
+          messagingSenderId: "773903950682",
+          appId: "1:773903950682:web:18ddfe6716d2c70655c963"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+       
+      </script>
+<script src="app.js"></script>
+</body>
+</html>
